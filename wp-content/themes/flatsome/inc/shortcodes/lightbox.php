@@ -20,7 +20,7 @@ function ux_lightbox( $atts, $content = null ) {
 	<div id="<?php echo $id; ?>"
 	     class="lightbox-by-id lightbox-content mfp-hide lightbox-white <?php echo $class; ?>"
 	     style="max-width:<?php echo $width ?> ;padding:<?php echo $padding; ?>">
-		<?php echo flatsome_contentfix( $content ); ?>
+		<?php echo do_shortcode( $content ); ?>
 	</div>
 	<?php if ( $auto_open ) : ?>
 		<script>

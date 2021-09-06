@@ -130,9 +130,11 @@ function block_shortcode( $atts, $content = null ) {
 
 	if ( is_home() ) $post = get_post( get_option('page_for_posts') );
 
-	if ( $post_id = flatsome_get_block_id( $id ) ) {
-		$the_post = get_post( $post_id, OBJECT, 'display' );
-		$html     = isset( $the_post ) ? $the_post->post_content : '';
+	$post_id  = flatsome_get_block_id( $id );
+	$the_post = $post_id ? get_post( $post_id, OBJECT, 'display' ) : null;
+
+	if ( $the_post ) {
+		$html = $the_post->post_content;
 
 		if ( empty( $html ) ) {
 			$html = '<p class="lead shortcode-error">Open this in UX Builder to add and edit content</p>';

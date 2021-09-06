@@ -1,0 +1,47 @@
+/* ========= INFORMATION ============================
+	- document:  WP Coder!
+	- author:    Dmytro Lobov 
+	- url:       https://wow-estore.com/
+==================================================== */
+.page-wrapper {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.col, .gallery-item, .columns {
+   padding: 0;
+}
+.box-text-inner{
+	font-size:16px;
+}
+.text-color{
+		color:#111;
+}
+.btn_style{
+	background:#fff;
+
+}
+.btn_style span{
+		color:#fa5a00;
+}
+#icon{
+	margin-left: 180px;
+}
+#icon::after{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0a9";
+	font-size:16px;
+		color:#fa5a00;
+}
+#icon_appstore::before{
+		font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f179";
+	font-size:16px;
+}
+#icon_chplay::before{
+		font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f3ab";
+	font-size:16px;
+}
+
+
+.box-text h1, .box-text h2, .box-text h3, .box-text h4, .box-text h5, .box-text h6, .box-text a:not(.button) {
+    color: #111;
+	font-size:16px;
+}

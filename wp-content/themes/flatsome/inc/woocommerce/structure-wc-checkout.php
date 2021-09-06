@@ -39,7 +39,7 @@ function flatsome_override_existing_checkout_fields( $fields ) {
 	if ( isset( $fields['address_2'] ) ) {
 		$fields['address_1']['class'][] = 'form-row-first';
 		$fields['address_2']['class'][] = 'form-row-last';
-		$fields['address_2']['label']   = esc_attr__( 'Apartment, suite, unit etc.', 'woocommerce' );
+		$fields['address_2']['label']   = esc_attr__( 'Apartment, suite, unit, etc.', 'woocommerce' );
 
 		// Remove "form-row-wide" class from address 1 and address 2.
 		$fields['address_1']['class'] = array_diff( $fields['address_1']['class'], array( 'form-row-wide' ) );

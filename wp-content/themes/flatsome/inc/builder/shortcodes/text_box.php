@@ -173,7 +173,7 @@ add_ux_builder_shortcode( 'text_box', array(
             ),
             'depth_hover' => array(
               'type' => 'slider',
-              'heading' => __('Depth :Hover'),
+              'heading' => __('Depth :hover'),
               'default' => '0',
               'unit' => '+',
               'max' => '5',

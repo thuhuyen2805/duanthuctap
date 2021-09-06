@@ -1,6 +1,6 @@
 <?php
 // [blog_posts]
-function shortcode_latest_from_blog($atts, $content = null, $tag) {
+function shortcode_latest_from_blog($atts, $content = null, $tag = '' ) {
 
 	extract(shortcode_atts(array(
 		"_id" => 'row-'.rand(),
@@ -156,6 +156,7 @@ function shortcode_latest_from_blog($atts, $content = null, $tag) {
 	$repeater['slider_nav_color'] = $slider_nav_color;
 	$repeater['slider_bullets'] = $slider_bullets;
     $repeater['auto_slide'] = $auto_slide;
+	$repeater['infinitive'] = $infinitive;
 	$repeater['row_spacing'] = $col_spacing;
 	$repeater['row_width'] = $width;
 	$repeater['columns'] = $columns;
